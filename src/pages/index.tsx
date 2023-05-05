@@ -4,7 +4,7 @@ import { ProfileImage } from "@/components/ProfileImage";
 
 export default function Home() {
   return (
-    <div className="w-screen h-screen bg-gradient-to-b from-gray-800 to-black flex justify-center items-center font-mono">
+    <div className="w-screen h-screen flex justify-center items-center font-mono">
       <div className="bg-white p-5 rounded-xl w-1/2">
         <div className="flex flex-row justify-start">
           <div className="p-5 border border-gray-200 rounded-xl mr-10">
