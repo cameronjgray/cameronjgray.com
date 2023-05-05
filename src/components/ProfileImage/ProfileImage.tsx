@@ -1,6 +1,6 @@
 export function ProfileImage() {
   return (
-    <div className="h-full w-full flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center">
       <div className="h-72 w-72 bg-orange-500 rounded-full"></div>
 
       <div className="grid grid-cols-3 gap-5 mt-3">
