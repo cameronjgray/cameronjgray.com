@@ -8,16 +8,16 @@ type Logo = {
 
 export function Logos() {
   const logos: Logo = [
-    { name: "Typescript", src: "/ts.png", alt: "Typescript Logo" },
-    { name: "React", src: "/react.png", alt: "React Logo" },
-    { name: "Node", src: "/node.png", alt: "Node Logo" },
-    { name: "Jest", src: "/jest.png", alt: "Jest Logo" },
-    { name: "Git", src: "/git.png", alt: "Git Logo" },
-    { name: "Linux", src: "/tux.png", alt: "Linux Tux" },
-    { name: "SQL", src: "/sql.png", alt: "SQL Logo" },
-    { name: "AWS", src: "/aws.png", alt: "AWS Logo" },
-    { name: "PHP", src: "/php.png", alt: "PHP Logo" },
-    { name: "Python", src: "/python.png", alt: "Python Logo" },
+    { name: "Typescript", src: "/ts.webp", alt: "Typescript Logo" },
+    { name: "React", src: "/react.webp", alt: "React Logo" },
+    { name: "Node", src: "/node.webp", alt: "Node Logo" },
+    { name: "Jest", src: "/jest.webp", alt: "Jest Logo" },
+    { name: "Git", src: "/git.webp", alt: "Git Logo" },
+    { name: "Linux", src: "/tux.webp", alt: "Linux Tux" },
+    { name: "SQL", src: "/sql.webp", alt: "SQL Logo" },
+    { name: "AWS", src: "/aws.webp", alt: "AWS Logo" },
+    { name: "PHP", src: "/php.webp", alt: "PHP Logo" },
+    { name: "Python", src: "/python.webp", alt: "Python Logo" },
   ];
 
   return (
