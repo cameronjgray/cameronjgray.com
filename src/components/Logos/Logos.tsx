@@ -26,7 +26,7 @@ export function Logos() {
         return (
           <div
             key={`${logo.name}-${index}`}
-            className="flex flex-row justify-center items-center bg-gray-200 rounded-xl w-fit px-3 py-1 mr-2 mb-2"
+            className="flex flex-row justify-center items-center bg-gray-200 rounded-2xl w-fit px-3 py-1 mr-2 mb-2"
           >
             <img src={logo.src} alt={logo.src} className="w-5 h-5 mr-1"></img>
             <div className="text-lg text-gray-600">{logo.name}</div>
