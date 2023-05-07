@@ -1,7 +1,6 @@
 import { Technology } from './types.ts';
 
 export const getTechnologyLogo = (technology: Technology) => {
-    console.log(technology);
     switch (technology) {
         case Technology.React:
             return '/react.webp';

@@ -1,10 +1,5 @@
 import { Technology } from '@/helpers/technologies';
 
-type DescriptionItem = {
-    title: string;
-    description: string;
-}
-
 export type Job = {
     company: {
         name: string;
@@ -12,10 +7,10 @@ export type Job = {
         jobTitle: string;
         location: string;
         technologies: Technology[];
-        summary: string;
     };
-    responsibilities: DescriptionItem[];
-    achievements: DescriptionItem[];
+    summary: string;
+    responsibilities: string[];
+    achievements: string[];
 }
 
 const incentiveGames: Job = {
@@ -32,19 +27,13 @@ const incentiveGames: Job = {
             Technology.SQL,
             Technology.AWS,
         ],
-        summary: 'summary summary summary',
     },
+    summary: 'I started at the company when I was a graduate. It was at the early startup stage where there was only about 6 people in the company. From there I grew with the company, getting more and more responsibility working on their suite of games.',
     responsibilities: [
-        {
-            title: 'Responsibility 1',
-            description: 'some desc ovah here',
-        },
+        '',
     ],
     achievements: [
-        {
-            title: 'Achievement 1',
-            description: 'some desc ovah here',
-        },
+        'something',
     ],
 }
 
@@ -65,19 +54,13 @@ const procuros: Job = {
             Technology.AWS,
             Technology.GoogleAppScript,
         ],
-        summary: 'summary summary summary',
     },
+    summary: 'summary summary summary',
     responsibilities: [
-        {
-            title: 'Responsibility 1',
-            description: 'some desc ovah here',
-        },
+        'something',
     ],
     achievements: [
-        {
-            title: 'Achievement 1',
-            description: 'some desc ovah here',
-        },
+        'something',
     ],
 }
 
