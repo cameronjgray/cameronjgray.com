@@ -9,4 +9,8 @@ export enum Technology {
     AWS = 'AWS',
     PHP = 'PHP',
     Python = 'Python',
+    Laravel = 'Laravel',
+    PHPUnit = 'PHPUnit',
+    Docker = 'Docker',
+    GoogleAppScript = 'Google App Script',
 }

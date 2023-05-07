@@ -1,8 +1,22 @@
 import Image from "next/image";
 import { Logos } from "@/components/Logos";
 import { ProfileImage } from "@/components/ProfileImage";
+import { Technology } from "@/helpers/technologies";
 
 export default function Home() {
+  const logos: Logo = [
+    { name: Technology.Typescript, alt: "Typescript Logo" },
+    { name: Technology.React, alt: "React Logo" },
+    { name: Technology.Node, alt: "Node Logo" },
+    { name: Technology.Jest, alt: "Jest Logo" },
+    { name: Technology.Git, alt: "Git Logo" },
+    { name: Technology.Linux, alt: "Linux Tux" },
+    { name: Technology.SQL, alt: "SQL Logo" },
+    { name: Technology.AWS, alt: "AWS Logo" },
+    { name: Technology.PHP, alt: "PHP Logo" },
+    { name: Technology.Python, alt: "Python Logo" },
+  ];
+
   return (
     <div className="w-screen h-screen flex justify-center items-center font-mono">
       <div className="bg-white p-5 rounded-xl w-1/2">
@@ -24,7 +38,7 @@ export default function Home() {
                 <div className="border-t border-gray-200 mb-8 mt-1"></div>
 
                 <div>
-                  <Logos />
+                  <Logos logos={logos} />
                 </div>
               </div>
 

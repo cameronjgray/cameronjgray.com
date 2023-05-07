@@ -23,6 +23,14 @@ export const getTechnologyLogo = (technology: Technology) => {
             return '/php.webp';
         case Technology.Python:
             return '/python.webp';
+        case Technology.Laravel:
+            return '/laravel.webp';
+        case Technology.PHPUnit:
+            return '/phpunit.webp';
+        case Technology.Docker:
+            return '/docker.webp';
+        case Technology.GoogleAppScript:
+            return '/script.webp';
         default:
             return '/default-icon.webp';
     }
