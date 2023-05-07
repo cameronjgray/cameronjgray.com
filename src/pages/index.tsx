@@ -1,10 +1,9 @@
-import Image from "next/image";
 import { Logos } from "@/components/Logos";
 import { ProfileImage } from "@/components/ProfileImage";
 import { Technology } from "@/helpers/technologies";
 
 export default function Home() {
-  const logos: Logo = [
+  const logos = [
     { name: Technology.Typescript, alt: "Typescript Logo" },
     { name: Technology.React, alt: "React Logo" },
     { name: Technology.Node, alt: "Node Logo" },

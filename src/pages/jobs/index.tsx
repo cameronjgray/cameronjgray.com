@@ -1,7 +1,5 @@
-import Image from "next/image";
 import { Logos } from "@/components/Logos";
-import { ProfileImage } from "@/components/ProfileImage";
-import { jobs, Job } from "./jobs.ts";
+import { jobs, Job } from "./jobs";
 import { Technology } from "@/helpers/technologies";
 
 export default function Jobs() {
