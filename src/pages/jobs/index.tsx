@@ -1,12 +1,17 @@
 import { Logos } from "@/components/Logos";
 import { jobs, Job } from "./jobs";
 import { Technology } from "@/helpers/technologies";
+import { BackButton } from "@/components/BackButton/BackButton";
 
 export default function Jobs() {
   return (
     <div className="flex justify-center py-20 font-mono">
       <div className="bg-white p-5 rounded-xl w-1/2">
+        <div>
+        <BackButton />
         <h1 className="text-3xl font-bold text-center mb-10">Jobs</h1>
+        </div>
+
         {jobs.map((job: Job) => {
           const technologies = job.company.technologies.map(
             (technology: Technology) => {
@@ -29,7 +34,7 @@ export default function Jobs() {
 
               <Logos logos={technologies} />
 
-              <div>{job.summary}</div>
+              <div className="pt-3">{job.summary}</div>
 
               <h3 className="text-lg font-bold pt-3">Responsibilities</h3>
               {job.responsibilities.map(responsibility => <div className="pb-3">{responsibility}</div>)}
