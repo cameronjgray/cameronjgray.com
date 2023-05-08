@@ -13,4 +13,12 @@ export enum Technology {
     PHPUnit = 'PHPUnit',
     Docker = 'Docker',
     GoogleAppScript = 'Google App Script',
+    HTML = 'HTML',
+    CSS = 'CSS',
+    JS = 'JS',
+    Tailwind = 'Tailwind',
+    GoogleSheets = 'Google Sheets',
+    TensorFlow = 'TensorFlow',
+    Vim = 'Vim',
+    NeoVim = 'NeoVim',
 }
