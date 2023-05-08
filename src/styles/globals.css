@@ -6,8 +6,3 @@ body {
     background: linear-gradient(rgb(31, 41, 55), black);
     background-attachment: fixed;
 }
-
-a {
-    text-decoration: underline;
-}
-

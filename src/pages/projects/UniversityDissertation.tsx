@@ -26,7 +26,7 @@ export function UniversityDissertation() {
       <div className="py-5">
         <p className="pb-3">My final year project at university was <i>"Using Machine Learning to Identify Doctored Images"</i>. The goal of the project was to produce software that could identify if an image had been tampered with. The secondary part of the project was to make the technology more accessible to people by make it available to use on a website.</p>
 
-        <p className="pb-3">I wrote the code to do the detection in Python, making use of TensorFlow for the machine learning part. Then for the website portion I used PHP. You can see the full dissertation <a href="">here</a>.</p>
+        <p className="pb-3">I wrote the code to do the detection in Python, making use of TensorFlow for the machine learning part. Then for the website portion I used PHP. You can see the full dissertation <a className="underline" href="">here</a>.</p>
       </div>
     </div>
   );
