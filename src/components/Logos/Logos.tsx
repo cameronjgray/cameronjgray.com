@@ -1,5 +1,5 @@
-import { LogoPill } from './LogoPill.tsx';
-import { getTechnologyLogo } from '@/helpers/technologies';
+import { LogoPill } from './LogoPill';
+import { Technology, getTechnologyLogo } from '@/helpers/technologies';
 
 type Logo = {
   name: Technology;
@@ -14,7 +14,7 @@ export function Logos({ logos }: Props) {
   return (
     <div className="flex flex-wrap">
       {logos.map(logo => {
-        return <LogoPill name={logo.name} alt={logo.alt} logoPath={getTechnologyLogo(logo.name)} />;
+        return <LogoPill key={logo.name} name={logo.name} alt={logo.alt} logoPath={getTechnologyLogo(logo.name)} />;
       })}
     </div>
   );

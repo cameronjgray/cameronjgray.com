@@ -8,8 +8,9 @@ export default function Jobs() {
     <div className="flex justify-center py-20 font-mono">
       <div className="bg-white p-5 rounded-xl w-1/2">
         <div>
-        <BackButton />
-        <h1 className="text-3xl font-bold text-center mb-10">Jobs</h1>
+          <BackButton />
+
+          <h1 className="text-3xl font-bold text-center mb-10">Jobs</h1>
         </div>
 
         {jobs.map((job: Job) => {
@@ -20,8 +21,8 @@ export default function Jobs() {
           );
 
           return (
-            <div className="pb-10">
-            <h1 className="text-2xl">
+            <div key={job.company.name} className="pb-10">
+              <h1 className="text-2xl">
                 <span className="font-bold">{job.company.name}</span> -{" "}
                 <span className="italic">{job.company.dates}</span>
               </h1>
@@ -37,11 +38,14 @@ export default function Jobs() {
               <div className="pt-3">{job.summary}</div>
 
               <h3 className="text-lg font-bold pt-3">Responsibilities</h3>
-              {job.responsibilities.map(responsibility => <div className="pb-3">{responsibility}</div>)}
+              {job.responsibilities.map((responsibility) => (
+                <div className="pb-3">{responsibility}</div>
+              ))}
 
               <h3 className="text-lg font-bold pt-3">Achievements</h3>
-              {job.achievements.map(achievement => <div className="pb-3">{achievement}</div>)}
-
+              {job.achievements.map((achievement) => (
+                <div className="pb-3">{achievement}</div>
+              ))}
             </div>
           );
         })}
