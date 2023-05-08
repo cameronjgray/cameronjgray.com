@@ -32,10 +32,10 @@ export default function Jobs() {
               <div>{job.summary}</div>
 
               <h3 className="text-lg font-bold pt-3">Responsibilities</h3>
-              {job.responsibilities.map(responsibility => <div>{responsibility}</div>)}
+              {job.responsibilities.map(responsibility => <div className="pb-3">{responsibility}</div>)}
 
               <h3 className="text-lg font-bold pt-3">Achievements</h3>
-              {job.achievements.map(achievement => <div>{achievement}</div>)}
+              {job.achievements.map(achievement => <div className="pb-3">{achievement}</div>)}
 
             </div>
           );

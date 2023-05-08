@@ -28,12 +28,20 @@ const incentiveGames: Job = {
             Technology.AWS,
         ],
     },
-    summary: 'I started at the company when I was a graduate. It was at the early startup stage where there was only about 6 people in the company. From there I grew with the company, getting more and more responsibility working on their suite of games.',
+    summary: 'Incentive Games is a creator of free to play sports and casino games that the lease out to other businesses to use on their platforms. I joined the company as a graduate and watched it grow from 5-10 people to 30. I got to start my career and begin to hone my development skills with exposure to the full stack.',
     responsibilities: [
-        '',
+        '- Development and maintenance of multiple different kinds of games in the company\'s game suite',
+        '- Development and maintenance of the full stack of the project to create the the user permission groups in the company\'s admin client',
+        '- Creating a script using historical data to check how different scoring matrices would effect our fantasy sport games',
+        '- Monitoring and updating of the security flags and security status of the different games',
+        '- Being one of the developers that had been there the longest meant I had more responsibility when it came to the older games in the suit',
     ],
     achievements: [
-        'something',
+        '- Promotion from graduate to junior developer',
+        '- Learning and using a lot of new technologies that come with working in a professional development environment, delivering games to a tight deadline',
+        '- Taking ownership of the security of the games after pen tests and implementing fixes across the game suite',
+        '- Entire ownership of project to build and maintain user management feature for the company’s admin client',
+        '- My progress and commitment being recognised meaning I was given more and more responsibility',
     ],
 }
 
@@ -55,12 +63,19 @@ const procuros: Job = {
             Technology.GoogleAppScript,
         ],
     },
-    summary: 'summary summary summary',
+    summary: 'Procuros Gmbh is a German startup with the goal of automating B2B transactions. I joined the company very early on and given a lot of responsibility for different projects. As the company grew my role changed and evolved. It went from lots of smaller projects to one large project which was the company portal and a key product for the company\'s investment.',
+        
     responsibilities: [
-        'something',
+        '- Primary developer for the development and maintenance of the customer portal where the client could view and create transactions, see connections and manage their account. I was part of lots of decisions around the portal including how the frontend repository would be structured, the design of the portal and the REST API that it would make calls to.',
+        '- Maintenance of the email connector software for generating order responses, shipping notices and invoices. This also included creation and maintenance of the calculator to calculate all the discounts and charges associated with an invoice.',
+        '- Creation and maintenance of the Google Sheets connector. A piece of software that used Google App Script so that a user could place an order in our system using a Google Sheet.',
+        '- Involvement in the hiring of new developers to the company',
     ],
     achievements: [
-        'something',
+        '- Promotion from junior to mid level developer',
+        '- Main player in the project to completely rebuild the customer portal. I handled the majority of the frontend rebuild in this process as well as being part of all the decisions related to the new code base structure.',
+        '- Built the software to create orders, shipping notices and invoices via email magic links. This also involved a sub project for tax and modifications on the created invoices which was entirely my responsibility.',
+        '- Continuous increase in responsibility of projects of different scopes',
     ],
 }
 
