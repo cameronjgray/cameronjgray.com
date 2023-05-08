@@ -44,7 +44,7 @@ export const getTechnologyLogo = (technology: Technology) => {
             return '/tailwind.webp';
         case Technology.Vim:
             return '/vim.webp';
-        case Technology.NeoVim:
+        case Technology.Neovim:
             return '/neovim.webp';
         default:
             return '/default-icon.webp';

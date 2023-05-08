@@ -20,5 +20,5 @@ export enum Technology {
     GoogleSheets = 'Google Sheets',
     TensorFlow = 'TensorFlow',
     Vim = 'Vim',
-    NeoVim = 'NeoVim',
+    Neovim = 'Neovim',
 }

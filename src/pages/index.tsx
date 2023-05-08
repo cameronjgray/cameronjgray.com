@@ -15,6 +15,7 @@ export default function Home() {
     { name: Technology.AWS, alt: "AWS Logo" },
     { name: Technology.PHP, alt: "PHP Logo" },
     { name: Technology.Python, alt: "Python Logo" },
+    { name: Technology.Neovim, alt: "Neovim Logo" },
   ];
 
   return (
