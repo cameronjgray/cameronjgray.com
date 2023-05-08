@@ -21,7 +21,7 @@ export default function Jobs() {
 
           return (
             <div className="pb-10">
-              <h1 className="text-2xl">
+            <h1 className="text-2xl">
                 <span className="font-bold">{job.company.name}</span> -{" "}
                 <span className="italic">{job.company.dates}</span>
               </h1>
