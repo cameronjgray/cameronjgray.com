@@ -8,6 +8,7 @@ export default function Home() {
     { name: Technology.React, alt: "React Logo" },
     { name: Technology.Node, alt: "Node Logo" },
     { name: Technology.Jest, alt: "Jest Logo" },
+    { name: Technology.Tailwind, alt: "Tailwind Logo" },
     { name: Technology.Git, alt: "Git Logo" },
     { name: Technology.Linux, alt: "Linux Tux" },
     { name: Technology.SQL, alt: "SQL Logo" },

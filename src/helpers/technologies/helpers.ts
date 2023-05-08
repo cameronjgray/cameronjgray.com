@@ -30,6 +30,22 @@ export const getTechnologyLogo = (technology: Technology) => {
             return '/docker.webp';
         case Technology.GoogleAppScript:
             return '/script.webp';
+        case Technology.HTML:
+            return '/html.webp';
+        case Technology.GoogleSheets:
+            return '/google-sheets.webp';
+        case Technology.TensorFlow:
+            return '/tensorflow.webp';
+        case Technology.CSS:
+            return '/css.webp';
+        case Technology.JS:
+            return '/js.webp';
+        case Technology.Tailwind:
+            return '/tailwind.webp';
+        case Technology.Vim:
+            return '/vim.webp';
+        case Technology.NeoVim:
+            return '/neovim.webp';
         default:
             return '/default-icon.webp';
     }
