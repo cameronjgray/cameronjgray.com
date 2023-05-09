@@ -10,7 +10,7 @@ import { VimLearning } from "./VimLearning";
 export default function Projects() {
   return (
     <div className="flex justify-center py-20 font-mono">
-      <div className="bg-white p-5 rounded-xl w-1/2">
+      <div className="bg-white p-5 rounded-xl md:w-2/3 xl:w-1/2">
         <div>
           <BackButton />
           <h1 className="text-3xl font-bold text-center mb-10">Projects</h1>

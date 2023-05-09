@@ -6,7 +6,7 @@ import { BackButton } from "@/components/BackButton/BackButton";
 export default function Jobs() {
   return (
     <div className="flex justify-center py-20 font-mono">
-      <div className="bg-white p-5 rounded-xl w-1/2">
+      <div className="bg-white p-5 rounded-xl md:w-2/3 xl:w-1/2">
         <div>
           <BackButton />
 
