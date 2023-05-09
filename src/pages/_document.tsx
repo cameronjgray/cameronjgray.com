@@ -4,6 +4,10 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+        <title>Cameron Gray</title>
+        <meta name="description" content="Cameron Gray CV Website" />
+        <meta name="keywords" content="Developer, Javascript, Node, Typescript, Python" />
+        <meta name="author" content="Cameron Gray" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link
           rel="apple-touch-icon"
