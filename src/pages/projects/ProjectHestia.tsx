@@ -14,7 +14,7 @@ export function ProjectHestia() {
   });
 
   return (
-    <div className="pb-3">
+    <div id="hestia" className="pb-3">
       <h1 className="text-2xl">
         <span className="font-bold">Project Hestia</span> -{" "}
         <span className="italic">2018 - Present</span>

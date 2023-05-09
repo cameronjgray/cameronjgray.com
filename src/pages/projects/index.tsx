@@ -14,7 +14,32 @@ export default function Projects() {
         <div>
           <BackButton />
           <h1 className="text-3xl font-bold text-center mb-10">Projects</h1>
-            
+
+          <div className="p-10 bg-gray-100 rounded-xl my-5 text-lg">
+            <div className="text-xl font-bold">Contents</div>
+            <ul className="list-disc">
+              <li>
+                <a href="#hestia">Project Hestia</a>
+              </li>
+
+              <li>
+                <a href="#ffbb">Fantasy Fantasy Basketball</a>
+              </li>
+
+              <li>
+                <a href="#dissertation">University Dissertation</a>
+              </li>
+
+              <li>
+                <a href="#ciphers">Ciphers</a>
+              </li>
+
+              <li>
+                <a href="#vim">Vim Learning</a>
+              </li>
+            </ul>
+          </div>
+
           <ProjectHestia />
           <FFBB />
           <UniversityDissertation />

@@ -13,7 +13,7 @@ export function UniversityDissertation() {
   });
 
   return (
-    <div className="pb-3">
+    <div id="dissertation" className="pb-3">
       <h1 className="text-2xl">
         <span className="font-bold">University Dissertation</span> -{" "}
         <span className="italic">2018 - 2019</span>

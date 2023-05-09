@@ -12,7 +12,7 @@ export function VimLearning() {
   });
 
   return (
-    <div className="pb-3">
+    <div id="vim" className="pb-3">
       <h1 className="text-2xl">
         <span className="font-bold">Vim Learning</span> -{" "}
         <span className="italic">2022 - Present</span>

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     background: linear-gradient(rgb(31, 41, 55), black);
     background-attachment: fixed;
