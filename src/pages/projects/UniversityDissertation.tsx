@@ -1,7 +1,7 @@
 import { Logos } from "@/components/Logos";
 import { Technology } from "@/helpers/technologies";
 
-export function UniversityDissertation() {
+export default function UniversityDissertation() {
   const technologies: Technology[] = [
     Technology.Python,
     Technology.TensorFlow,

@@ -1,7 +1,7 @@
 import { Logos } from "@/components/Logos";
 import { Technology } from "@/helpers/technologies";
 
-export function VimLearning() {
+export default function VimLearning() {
   const technologies: Technology[] = [
     Technology.Vim,
     Technology.Neovim,

@@ -1,7 +1,7 @@
 import { Logos } from "@/components/Logos";
 import { Technology } from "@/helpers/technologies";
 
-export function ProjectHestia() {
+export default function ProjectHestia() {
   const technologies: Technology[] = [
     Technology.HTML,
     Technology.CSS,

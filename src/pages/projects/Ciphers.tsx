@@ -1,7 +1,7 @@
 import { Logos } from "@/components/Logos";
 import { Technology } from "@/helpers/technologies";
 
-export function Ciphers() {
+export default function Ciphers() {
   const technologies: Technology[] = [
     Technology.Node,
   ];

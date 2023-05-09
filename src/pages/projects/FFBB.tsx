@@ -1,7 +1,7 @@
 import { Logos } from "@/components/Logos";
 import { Technology } from "@/helpers/technologies";
 
-export function FFBB() {
+export default function FFBB() {
   const technologies: Technology[] = [
     Technology.Python,
     Technology.GoogleSheets,

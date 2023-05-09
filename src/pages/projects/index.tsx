@@ -1,11 +1,9 @@
-import { Logos } from "@/components/Logos";
-import { Technology } from "@/helpers/technologies";
 import { BackButton } from "@/components/BackButton/BackButton";
-import { ProjectHestia } from "./ProjectHestia";
-import { FFBB } from "./FFBB";
-import { UniversityDissertation } from "./UniversityDissertation";
-import { Ciphers } from "./Ciphers";
-import { VimLearning } from "./VimLearning";
+import ProjectHestia from "./ProjectHestia";
+import FFBB from "./FFBB";
+import UniversityDissertation from "./UniversityDissertation";
+import Ciphers from "./Ciphers";
+import VimLearning from "./VimLearning";
 
 export default function Projects() {
   return (
