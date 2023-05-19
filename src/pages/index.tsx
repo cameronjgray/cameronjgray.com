@@ -13,7 +13,7 @@ export default function Home() {
     { name: Technology.Linux, alt: "Linux Tux" },
     { name: Technology.SQL, alt: "SQL Logo" },
     { name: Technology.AWS, alt: "AWS Logo" },
-    { name: Technology.PHP, alt: "PHP Logo" },
+    { name: Technology.Docker, alt: "Docker Logo" },
     { name: Technology.Python, alt: "Python Logo" },
     { name: Technology.Neovim, alt: "Neovim Logo" },
   ];
