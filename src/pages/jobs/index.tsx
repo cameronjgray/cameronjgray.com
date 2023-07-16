@@ -10,9 +10,9 @@ export type Job = {
         location: string;
         technologies: Technology[];
     };
-    summary: string;
-    responsibilities: string[];
-    achievements: string[];
+    summary: string[];
+    responsibilities?: string[];
+    achievements?: string[];
 }
 
 const incentiveGames: Job = {
@@ -30,7 +30,7 @@ const incentiveGames: Job = {
             Technology.AWS,
         ],
     },
-    summary: 'Incentive Games is a creator of free to play sports and casino games that the lease out to other businesses to use on their platforms. I joined the company as a graduate and watched it grow from 5-10 people to 30. I got to start my career and begin to hone my development skills with exposure to the full stack.',
+    summary: [ 'Incentive Games is a creator of free to play sports and casino games that the lease out to other businesses to use on their platforms. I joined the company as a graduate and watched it grow from 5-10 people to 30. I got to start my career and begin to hone my development skills with exposure to the full stack.' ],
     responsibilities: [
         '- Development and maintenance of multiple different kinds of games in the company\'s game suite',
         '- Development and maintenance of the full stack of the project to create the the user permission groups in the company\'s admin client',
@@ -65,8 +65,8 @@ const procuros: Job = {
             Technology.GoogleAppScript,
         ],
     },
-    summary: 'Procuros Gmbh is a German startup with the goal of automating B2B transactions. I joined the company very early on and given a lot of responsibility for different projects. As the company grew my role changed and evolved. It went from lots of smaller projects to one large project which was the company portal and a key product for the company\'s investment.',
-        
+    summary: [ 'Procuros Gmbh is a German startup with the goal of automating B2B transactions. I joined the company very early on and given a lot of responsibility for different projects. As the company grew my role changed and evolved. It went from lots of smaller projects to one large project which was the company portal and a key product for the company\'s investment.' ],
+
     responsibilities: [
         '- Primary developer for the development and maintenance of the customer portal where the client could view and create transactions, see connections and manage their account. I was part of lots of decisions around the portal including how the frontend repository would be structured, the design of the portal and the REST API that it would make calls to.',
         '- Maintenance of the email connector software for generating order responses, shipping notices and invoices. This also included creation and maintenance of the calculator to calculate all the discounts and charges associated with an invoice.',
@@ -81,7 +81,30 @@ const procuros: Job = {
     ],
 }
 
-const jobs: Job[] = [procuros, incentiveGames];
+const pps: Job = {
+    company: {
+        name: 'Plastic Pipe Shop',
+        dates: 'June 2023 - Current',
+        jobTitle: 'Freelance',
+        location: 'UK (Remote)',
+        technologies: [
+            Technology.Node,
+            Technology.Jest,
+            Technology.AWS,
+            Technology.CDK,
+            Technology.Docker,
+            Technology.Bash,
+        ],
+    },
+    summary: [ 'Hired as a freelancer to build software to automatically generate a Specification Sheet in PDF format for different products. There were multiple different versions of the PDF to generate depending on both user and product requirements. The project was built using the PDF Kit library and was deployed to AWS using CDK. Bash was used for writing test scripts but also for building the project for deployment too.',
+
+    'The project was optimised to save costs on AWS. It used a Lambda to run the software so that it scaled automatically and the database used for the files was an S3 Bucket. This was for cheaper than using some kind of SQL DB. For the dev setup everything was run within Docker containers with extra containers for running tests and for emulating the Lambda.',
+
+    'I was the only developer on the project so had full responsibility for the entire job. I had to do a lot of research and learning in order to produce a service that would be useful to the company. I also had a chance to optimise my own workflows by making more use of technologies like Bash. As I had to do everything myself unlike my last two jobs my skills as a developer came on leaps and bounds.'
+    ]
+}
+
+const jobs: Job[] = [pps, procuros, incentiveGames];
 
 export default function Jobs() {
   return (
@@ -115,15 +138,19 @@ export default function Jobs() {
 
               <Logos logos={technologies} />
 
-              <div className="pt-3">{job.summary}</div>
+              {job.summary.map((summaryParagraph) => {
+                return (
+                    <div className="pt-3">{summaryParagraph}</div>
+                )
+              })}
 
-              <h3 className="text-lg font-bold pt-3">Responsibilities</h3>
-              {job.responsibilities.map((responsibility) => (
+              {job.responsibilities && <h3 className="text-lg font-bold pt-3">Responsibilities</h3> }
+              {job.responsibilities?.map((responsibility) => (
                 <div className="pb-3">{responsibility}</div>
               ))}
 
-              <h3 className="text-lg font-bold pt-3">Achievements</h3>
-              {job.achievements.map((achievement) => (
+              {job.responsibilities && <h3 className="text-lg font-bold pt-3">Achievements</h3> }
+              {job.achievements?.map((achievement) => (
                 <div className="pb-3">{achievement}</div>
               ))}
             </div>

@@ -21,4 +21,6 @@ export enum Technology {
     TensorFlow = 'TensorFlow',
     Vim = 'Vim',
     Neovim = 'Neovim',
+    CDK = 'CDK',
+    Bash = 'Bash',
 }

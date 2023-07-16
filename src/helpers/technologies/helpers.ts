@@ -46,6 +46,9 @@ export const getTechnologyLogo = (technology: Technology) => {
             return '/vim.webp';
         case Technology.Neovim:
             return '/neovim.webp';
+        case Technology.CDK:
+            return '/cdk.webp';
+        case Technology.Bash:
         default:
             return '/default-icon.webp';
     }
