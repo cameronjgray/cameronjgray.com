@@ -49,6 +49,7 @@ export const getTechnologyLogo = (technology: Technology) => {
         case Technology.CDK:
             return '/cdk.webp';
         case Technology.Bash:
+            return '/bash.webp';
         default:
             return '/default-icon.webp';
     }
