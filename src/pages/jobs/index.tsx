@@ -84,7 +84,7 @@ const procuros: Job = {
 const pps: Job = {
     company: {
         name: 'Plastic Pipe Shop',
-        dates: 'June 2023 - Current',
+        dates: 'June 2023 - August 2023',
         jobTitle: 'Freelance',
         location: 'UK (Remote)',
         technologies: [
