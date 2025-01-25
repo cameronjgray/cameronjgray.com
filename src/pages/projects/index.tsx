@@ -2,7 +2,6 @@ import { BackButton } from "@/components/BackButton/BackButton";
 import ProjectHestia from "./ProjectHestia";
 import FFBB from "./FFBB";
 import UniversityDissertation from "./UniversityDissertation";
-import Ciphers from "./Ciphers";
 import VimLearning from "./VimLearning";
 
 export default function Projects() {
@@ -29,10 +28,6 @@ export default function Projects() {
               </li>
 
               <li>
-                <a href="#ciphers">Ciphers</a>
-              </li>
-
-              <li>
                 <a href="#vim">Vim Learning</a>
               </li>
             </ul>
@@ -41,7 +36,6 @@ export default function Projects() {
           <ProjectHestia />
           <FFBB />
           <UniversityDissertation />
-          <Ciphers />
           <VimLearning />
         </div>
       </div>

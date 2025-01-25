@@ -14,8 +14,7 @@ export default function VimLearning() {
   return (
     <div id="vim" className="pb-3">
       <h1 className="text-2xl">
-        <span className="font-bold">Vim Learning</span> -{" "}
-        <span className="italic">2022 - Present</span>
+        <span className="font-bold">Vim Learning</span>
       </h1>
 
       <div className="border-t border-gray-200 mb-3"></div>

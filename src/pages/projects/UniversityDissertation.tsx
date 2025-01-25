@@ -15,8 +15,7 @@ export default function UniversityDissertation() {
   return (
     <div id="dissertation" className="pb-3">
       <h1 className="text-2xl">
-        <span className="font-bold">University Dissertation</span> -{" "}
-        <span className="italic">2018 - 2019</span>
+        <span className="font-bold">University Dissertation</span>
       </h1>
 
       <div className="border-t border-gray-200 mb-3"></div>

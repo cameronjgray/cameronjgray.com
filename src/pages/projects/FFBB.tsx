@@ -14,8 +14,7 @@ export default function FFBB() {
   return (
     <div id="ffbb" className="pb-3">
       <h1 className="text-2xl">
-        <span className="font-bold">Fantasy Fantasy Basketball</span> -{" "}
-        <span className="italic">2020</span>
+        <span className="font-bold">Fantasy Fantasy Basketball</span>
       </h1>
 
       <div className="border-t border-gray-200 mb-3"></div>

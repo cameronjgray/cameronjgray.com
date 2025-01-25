@@ -1,6 +1,7 @@
 export enum Technology {
     Typescript = 'Typescript',
     React = 'React',
+    ReactNative = 'React Native',
     Node = 'Node',
     Jest = 'Jest',
     Git = 'Git',
@@ -23,4 +24,7 @@ export enum Technology {
     Neovim = 'Neovim',
     CDK = 'CDK',
     Bash = 'Bash',
+    GraphQL = 'GraphQL',
+    Sequelize = 'Sequelize',
+    Tmux = 'Tmux',
 }

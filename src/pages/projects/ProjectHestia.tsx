@@ -16,8 +16,7 @@ export default function ProjectHestia() {
   return (
     <div id="hestia" className="pb-3">
       <h1 className="text-2xl">
-        <span className="font-bold">Project Hestia</span> -{" "}
-        <span className="italic">2018 - Present</span>
+        <span className="font-bold">Project Hestia</span>
       </h1>
 
       <div className="border-t border-gray-200 mb-3"></div>
@@ -25,7 +24,7 @@ export default function ProjectHestia() {
       <Logos logos={logos} />
 
       <div className="py-5">
-        <p className="pb-3">Project Hestia is my longest running project. Named after the Greek God Hestia, who is the deity of family and the hearth, it is a project centred around family photos. It started as me trying to group and backup all our family photos into one place and since then has grown arms and legs.</p>
+        <p className="pb-3">Project Hestia started in 2018 and is my longest running project. Named after the Greek God Hestia, who is the deity of family and the hearth, it is a project centred around family photos. It started as me trying to group and backup all our family photos into one place and since then has grown arms and legs.</p>
 
         <p className="pb-3">The base of the project is a collection of sorted photos from our family. Currently I am sitting at about ~21,000 photos spanning from the 1960s to now. At first it was just getting all the photos off of old hard drives but a couple years ago I got a scanner and started to go through old photos in the attic and digitise them.</p>
 

@@ -4,19 +4,21 @@ import { Technology } from "@/helpers/technologies";
 
 export default function Home() {
   const logos = [
-    { name: Technology.Typescript, alt: "Typescript Logo" },
-    { name: Technology.React, alt: "React Logo" },
-    { name: Technology.Node, alt: "Node Logo" },
-    { name: Technology.Jest, alt: "Jest Logo" },
-    { name: Technology.Git, alt: "Git Logo" },
+    { name: Technology.Vim, alt: "Vim Logo" },
     { name: Technology.Linux, alt: "Linux Tux" },
     { name: Technology.Bash, alt: "Terminal Logo" },
+    { name: Technology.Git, alt: "Git Logo" },
+    { name: Technology.Node, alt: "Node Logo" },
+    { name: Technology.Typescript, alt: "Typescript Logo" },
+    { name: Technology.React, alt: "React Logo" },
+    { name: Technology.Jest, alt: "Jest Logo" },
     { name: Technology.SQL, alt: "SQL Logo" },
     { name: Technology.AWS, alt: "AWS Logo" },
     { name: Technology.CDK, alt: "CDK Logo" },
     { name: Technology.Docker, alt: "Docker Logo" },
     { name: Technology.Python, alt: "Python Logo" },
     { name: Technology.Neovim, alt: "Neovim Logo" },
+    { name: Technology.Tmux, alt: "Tmux Logo" },
   ];
 
   return (

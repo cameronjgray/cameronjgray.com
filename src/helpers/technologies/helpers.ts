@@ -3,6 +3,7 @@ import { Technology } from './types.ts';
 export const getTechnologyLogo = (technology: Technology) => {
     switch (technology) {
         case Technology.React:
+        case Technology.ReactNative:
             return '/react.webp';
         case Technology.Typescript:
             return '/ts.webp';
@@ -50,6 +51,12 @@ export const getTechnologyLogo = (technology: Technology) => {
             return '/cdk.webp';
         case Technology.Bash:
             return '/bash.webp';
+        case Technology.Tmux:
+            return '/tmux.webp';
+        case Technology.Sequelize:
+            return '/sequelize.webp';
+        case Technology.GraphQL:
+            return '/graphql.webp';
         default:
             return '/default-icon.webp';
     }
