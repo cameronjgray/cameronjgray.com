@@ -21,7 +21,7 @@ const incentiveGames: Job = {
         name: 'Incentive Games',
         dates: 'May 2020 - December 2021',
         jobTitle: 'Full Stack Developer',
-        location: 'UK (Remote)',
+        location: 'Edinburgh, UK (Remote)',
         technologies: [
             Technology.React,
             Technology.Typescript,
@@ -51,10 +51,10 @@ const incentiveGames: Job = {
 
 const procuros: Job = {
     company: {
-        name: 'Procuros Gmbh',
+        name: 'Procuros GmbH',
         dates: 'January 2022 - May 2023',
         jobTitle: 'Full Stack Developer',
-        location: 'Germany (Remote)',
+        location: 'Hamburg, Germany (Remote)',
         technologies: [
             Technology.React,
             Technology.Typescript,
@@ -68,7 +68,7 @@ const procuros: Job = {
         ],
         link: 'https://procuros.io/',
     },
-    summary: [ 'Procuros Gmbh is a German startup with the goal of automating B2B transactions. I joined the company very early on and given a lot of responsibility for different projects. As the company grew my role changed and evolved. It went from lots of smaller projects to one large project which was the company portal and a key product for the company\'s investment.' ],
+    summary: [ 'Procuros GmbH is a German startup with the goal of automating B2B transactions. I joined the company very early on and given a lot of responsibility for different projects. As the company grew my role changed and evolved. It went from lots of smaller projects to one large project which was the company portal and a key product for the company\'s investment.' ],
 
     responsibilities: [
         '- Primary developer for the development and maintenance of the customer portal where the client could view and create transactions, see connections and manage their account. I was part of lots of decisions around the portal including how the frontend repository would be structured, the design of the portal and the REST API that it would make calls to.',
@@ -89,7 +89,7 @@ const pps: Job = {
         name: 'Plastic Pipe Shop',
         dates: 'June 2023 - September 2023',
         jobTitle: 'Freelance',
-        location: 'UK (Remote)',
+        location: 'Stirling, UK (Remote)',
         technologies: [
             Technology.Node,
             Technology.Jest,
@@ -113,10 +113,11 @@ const vault: Job = {
         name: 'Vault',
         dates: 'October 2023 - Present',
         jobTitle: 'Full Stack Developer',
-        location: 'UK (Remote)',
+        location: 'London, UK (Remote)',
         technologies: [
             Technology.Node,
             Technology.Typescript,
+            Technology.React,
             Technology.Jest,
             Technology.SQL,
             Technology.AWS,
@@ -174,7 +175,7 @@ export default function Jobs() {
               </h1>
 
               <h2 className="text-lg">
-                {job.company.jobTitle}, {job.company.location}
+                {job.company.jobTitle}<br />{job.company.location}
               </h2>
 
               <div className="border-t border-gray-200 mb-3"></div>
