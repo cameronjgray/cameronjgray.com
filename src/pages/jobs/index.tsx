@@ -111,7 +111,7 @@ const pps: Job = {
 const vault: Job = {
     company: {
         name: 'Vault',
-        dates: 'October 2023 - Present',
+        dates: 'October 2023 - June 2025',
         jobTitle: 'Full Stack Developer',
         location: 'London, UK (Remote)',
         technologies: [
@@ -133,8 +133,9 @@ const vault: Job = {
         'Vault is where my skills outside of programming grew substantially. I started to take on more responsibility in leading different projects. These started small but grew in size as the company recognised my ability to effectively lead and deliver. Leading also meant communicating well with members of the team, design, product and wider stakeholders. I became an integral part of the team that could be relied upon by people throughout the company.'
     ],
     achievements: [
-        '- Tech lead on projects such as CSV exporting, file uploads and virus scanning',
+        '- One of the primary developers to help take the company to acquisition in June 2025',
         '- Co tech lead on major project to integrate the platform with 3rd party messaging services, such as Slack, to create a new user intake method and research how to add AI to the project for a chatbot feature',
+        '- Tech lead on projects such as CSV exporting, file uploads and virus scanning',
         '- Promotion from the internal IC3 level to IC4',
         '- Consistent positive feedback on my work from line managers and the wider team which was then rewarded with leading more projects and more responsibilities',
     ],
@@ -170,7 +171,11 @@ export default function Jobs() {
           return (
             <div key={job.company.name} className="pb-10">
               <h1 className="text-2xl">
-                <span className="font-bold"><a href={job.company.link}>{job.company.name}</a></span> -{" "}
+                <span className="font-bold">
+                    <a href={job.company.link} className="flex" target="_blank">{job.company.name}
+                        <img src={'/link.webp'} alt={'Link Icon'} className="w-3 h-3 ml-1"></img>
+                    </a>
+                </span> -{" "}
                 <span className="italic">{job.company.dates}</span>
               </h1>
 
