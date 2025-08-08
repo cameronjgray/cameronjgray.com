@@ -3,6 +3,7 @@ import ProjectHestia from "./ProjectHestia";
 import FFBB from "./FFBB";
 import UniversityDissertation from "./UniversityDissertation";
 import VimLearning from "./VimLearning";
+import NFLFantasyPlayerComparison from "./NFLFantasyPlayerComparison.tsx";
 
 export default function Projects() {
   return (
@@ -15,6 +16,10 @@ export default function Projects() {
           <div className="p-10 bg-gray-100 rounded-xl my-5 text-lg">
             <div className="text-xl font-bold">Contents</div>
             <ul className="list-disc">
+              <li>
+                <a href="#nfl">NFL Fantasy Player Comparison</a>
+              </li>
+
               <li>
                 <a href="#hestia">Project Hestia</a>
               </li>
@@ -33,6 +38,7 @@ export default function Projects() {
             </ul>
           </div>
 
+          <NFLFantasyPlayerComparison />
           <ProjectHestia />
           <FFBB />
           <UniversityDissertation />
