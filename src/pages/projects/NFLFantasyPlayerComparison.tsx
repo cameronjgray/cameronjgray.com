@@ -35,7 +35,7 @@ export default function NFLFantasyPlayerComparison() {
         <img src="/heightweightrating.webp" className="px-5" alt="Height, weight and rating run" />
         <p className="pb-3">Lastly, below we have every metric bar Madden rating and team Strength of Schedule. It's mainly just noise with experience coming out on top. However the overall model is pretty poor with the score being much worse than the others.</p>
         <img src="/everythingbarrating.webp" className="px-5" alt="Everything bar rating run" />
-        <p className="pb-3">So what did I learn? The conclusion was that Madden rating was far and away the most significant variable. This is probably because the team at EA have put a lot more work into classifying the players than my project! If you want you can try out the classifier you can find the Github link <a href="https://github.com/cameronjgray/player-comparison" target="_blank">here</a> but for fantasy football it's best just to trust the experts and hope you have good luck.</p>
+        <p className="pb-3">So what did I learn? The conclusion was that Madden rating was far and away the most significant variable. This is probably because the team at EA have put a lot more work into classifying the players than my project! If you want you can try out the classifier you can find the Github link <a className="underline text-blue-500" href="https://github.com/cameronjgray/player-comparison" target="_blank">here</a> but for fantasy football it's best just to trust the experts and hope you have good luck.</p>
       </div>
     </div>
   );
