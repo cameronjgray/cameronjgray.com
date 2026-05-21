@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My CV and portfolio">
+  <meta name="theme-color" content="#0e0e10">
+  <title>cameronjgray.com</title>
+
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="preload" as="image" href="/img/hero-800.avif" type="image/avif" fetchpriority="high">
+  <link rel="preload" href="/styles.css" as="style">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <canvas id="stars" class="stars">
+  Your browser does not support the HTML canvas tag.</canvas>
+
+  <header class="hero">
+    <picture class="hero__photo">
+      <source type="image/avif"
+              srcset="/img/hero-400.avif 400w, /img/hero-800.avif 800w"
+              sizes="(max-width: 600px) 200px, 320px">
+      <source type="image/webp"
+              srcset="/img/hero-400.webp 400w, /img/hero-800.webp 800w"
+              sizes="(max-width: 600px) 200px, 320px">
+      <img src="/img/hero-800.jpg" alt="Photo of me"
+           width="320" height="320" fetchpriority="high" decoding="async">
+    </picture>
+
+    <div class="hero__intro">
+      <h1>Cameron Gray</h1>
+      <p class="tagline">Fullstack Developer | Vim Enthusiant | Startup Adjacent</p>
+      <p>
+        <a href="/assets/cv.pdf" class="btn">Download CV</a>
+        <a href="#work" class="btn btn--ghost">See Work</a>
+        <a href="#projects" class="btn btn--ghost">See Projects</a>
+      </p>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        Hello! My name is Cameron and I'm a Fullstack Developer who has (mainly) worked at start ups. I'm happiest when I'm at the terminal, adore all things Linux and did I already mention I use Vim btw?
+      </p>
+    </section>
+
+    <section id="work">
+      <h2>Work</h2>
+      <div class="grid">
+        <article class="card">
+          <a href="https://swap-commerce.com" target="_blank">
+          <picture>
+            <source type="image/avif"
+                    srcset="/img/swap-400.avif 400w, /img/swap-800.avif 800w"
+                    sizes="(max-width: 600px) 100vw, 400px">
+            <source type="image/webp"
+                    srcset="/img/swap-400.webp 400w, /img/swap-800.webp 800w"
+                    sizes="(max-width: 600px) 100vw, 400px">
+            <img src="/img/swap-800.jpg" alt="Project one screenshot"
+                 width="800" height="500" loading="lazy" decoding="async">
+          </picture>
+          <h3>Swap Commerce</h3>
+          <p>Software Developer | December 2025 - Current</p>
+          <p><i>Skills:</i> Node.js</p>
+          </a>
+        </article>
+
+        <article class="card">
+          <a href="https://vaultplatform.com" target="_blank">
+          <picture>
+            <source type="image/avif"
+                    srcset="/img/vault-400.avif 400w, /img/vault-800.avif 800w"
+                    sizes="(max-width: 600px) 100vw, 400px">
+            <source type="image/webp"
+                    srcset="/img/vault-400.webp 400w, /img/vault-800.webp 800w"
+                    sizes="(max-width: 600px) 100vw, 400px">
+            <img src="/img/vault-800.jpg" alt="Project one screenshot"
+                 width="800" height="500" loading="lazy" decoding="async">
+          </picture>
+          <h3>Vault Platform</h3>
+          <p>Software Developer | September 2023 - June 2025</p>
+          <p><i>Skills:</i> React.js, Typescript, Node.js, Jest, SQL, GraphQL, Sequelize, Docker, AWS,
+Bash, React Native</p>
+          </a>
+        </article>
+
+        <article class="card">
+          <a href="" target="_blank">
+          <picture>
+            <source type="image/avif"
+                    srcset="/img/project-1-400.avif 400w, /img/project-1-800.avif 800w"
+                    sizes="(max-width: 600px) 100vw, 400px">
+            <source type="image/webp"
+                    srcset="/img/project-1-400.webp 400w, /img/project-1-800.webp 800w"
+                    sizes="(max-width: 600px) 100vw, 400px">
+            <img src="/img/project-1-800.jpg" alt="Project one screenshot"
+                 width="800" height="500" loading="lazy" decoding="async">
+          </picture>
+          <h3>Plastic Pipe Shop</h3>
+          <p>Freelance Developer | June 2023 - September 2023</p>
+          <p><i>Skills:</i> Node.js, Jest, AWS, CDK, Docker, Bash</p>
+          </a>
+        </article>
+
+        <article class="card">
+          <a href="https://procuros.io/" target="_blank">
+          <picture>
+            <source type="image/avif"
+                    srcset="/img/procuros-400.avif 400w, /img/procuros-800.avif 800w"
+                    sizes="(max-width: 600px) 100vw, 400px">
+            <source type="image/webp"
+                    srcset="/img/procuros-400.webp 400w, /img/procuros-800.webp 800w"
+                    sizes="(max-width: 600px) 100vw, 400px">
+            <img src="/img/procuros-800.jpg" alt="Project one screenshot"
+                 width="800" height="500" loading="lazy" decoding="async">
+          </picture>
+          <h3>Procuros GmbH</h3>
+          <p>Software Developer | January 2022 - May 2023</p>
+          <p><i>Skills:</i> React.js, Typescript, Jest, PHP, Laravel, PHPUnit, Pest, Docker, AWS</p>
+          </a>
+        </article>
+
+        <article class="card">
+          <a href="https://incentivegames.com" target="_blank">
+          <picture>
+            <source type="image/avif"
+                    srcset="/img/incentive-400.avif 400w, /img/incentive-800.avif 800w"
+                    sizes="(max-width: 600px) 100vw, 400px">
+            <source type="image/webp"
+                    srcset="/img/incentive-400.webp 400w, /img/incentive-800.webp 800w"
+                    sizes="(max-width: 600px) 100vw, 400px">
+            <img src="/img/incentive-800.jpg" alt="Project one screenshot"
+                 width="800" height="500" loading="lazy" decoding="async">
+          </picture>
+          <h3>Incentive Games</h3>
+          <p>Software Developer | May 2020 - 2021</p>
+          <p><i>Skills:</i> React.js, Typescript, Jest, Node.js, SQL, AWS</p>
+          </a>
+        </article>
+      </div>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <picture>
+            <source type="image/avif"
+                    srcset="/img/project-1-400.avif 400w, /img/project-1-800.avif 800w"
+                    sizes="(max-width: 600px) 100vw, 400px">
+            <source type="image/webp"
+                    srcset="/img/project-1-400.webp 400w, /img/project-1-800.webp 800w"
+                    sizes="(max-width: 600px) 100vw, 400px">
+            <img src="/img/project-1-800.jpg" alt="Project one screenshot"
+                 width="800" height="500" loading="lazy" decoding="async">
+          </picture>
+          <h3>Project One</h3>
+          <p>What it does and why it matters.</p>
+        </article>
+
+        <article class="card">
+          <picture>
+            <source type="image/avif"
+                    srcset="/img/project-2-400.avif 400w, /img/project-2-800.avif 800w"
+                    sizes="(max-width: 600px) 100vw, 400px">
+            <source type="image/webp"
+                    srcset="/img/project-2-400.webp 400w, /img/project-2-800.webp 800w"
+                    sizes="(max-width: 600px) 100vw, 400px">
+            <img src="/img/project-2-800.jpg" alt="Project two screenshot"
+                 width="800" height="500" loading="lazy" decoding="async">
+          </picture>
+          <h3>Project Two</h3>
+          <p>What it does and why it matters.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <ul class="links">
+        <li><a href="mailto:you@example.com">you@example.com</a></li>
+        <li><a href="https://github.com/yourhandle" rel="me noopener">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/yourhandle" rel="me noopener">LinkedIn</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
