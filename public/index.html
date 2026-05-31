@@ -3,14 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Cameron Gray - Full Stack Developer">
+  <meta name="description" content="Cameron Gray - Fullstack Developer">
   <meta name="theme-color" content="#0e0e10">
   <title>Cameron Gray</title>
 
+  <!-- Favicons -->
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
-  <link rel="preload" as="image" href="/img/hero-800.avif" type="image/avif" fetchpriority="high">
-  <link rel="preload" href="/styles.css" as="style">
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="manifest" href="/assets/site.webmanifest">
+
+  <!-- Preload critical assets. Versioned so a deploy cache-busts. -->
+  <link rel="preload" as="image" href="/img/headshot-800.avif" type="image/avif" fetchpriority="high">
+  <link rel="preload" href="/styles.css?v=3" as="style">
+  <link rel="stylesheet" href="/styles.css?v=3">
 </head>
 <body>
   <canvas id="stars" class="stars" aria-hidden="true">
@@ -20,12 +27,12 @@
   <header class="hero">
     <picture class="hero__photo">
       <source type="image/avif"
-              srcset="/img/hero-400.avif 400w, /img/hero-800.avif 800w"
+              srcset="/img/headshot-400.avif 400w, /img/headshot-800.avif 800w"
               sizes="(max-width: 600px) 200px, 320px">
       <source type="image/webp"
-              srcset="/img/hero-400.webp 400w, /img/hero-800.webp 800w"
+              srcset="/img/headshot-400.webp 400w, /img/headshot-800.webp 800w"
               sizes="(max-width: 600px) 200px, 320px">
-      <img src="/img/hero-800.jpg" alt="Photo of Cameron Gray"
+      <img src="/img/headshot-800.jpg" alt="Photo of Cameron Gray"
            width="320" height="320" fetchpriority="high" decoding="async">
     </picture>
 
@@ -62,10 +69,22 @@
 
     <section id="contact">
       <h2>Contact</h2>
-      <ul class="links">
-        <li><a href="mailto:this@cameronjgray.com">this@cameronjgray.com</a></li>
-        <li><a href="https://github.com/cameronjgray" rel="me noopener" target="_blank">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/cameronjgray47/" rel="me noopener" target="_blank">LinkedIn</a></li>
+      <ul class="contact-icons" aria-label="Contact links">
+        <li>
+          <a href="mailto:this@cameronjgray.com" aria-label="Email">
+            <img src="/img/icons/mail.webp" alt="" width="40" height="40" loading="lazy">
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/cameronjgray" rel="me noopener" target="_blank" aria-label="GitHub">
+            <img src="/img/icons/github.webp" alt="" width="40" height="40" loading="lazy">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/cameronjgray47/" rel="me noopener" target="_blank" aria-label="LinkedIn">
+            <img src="/img/icons/linkedin.webp" alt="" width="40" height="40" loading="lazy">
+          </a>
+        </li>
       </ul>
     </section>
   </main>
@@ -91,6 +110,6 @@
     </div>
   </dialog>
 
-  <script type="module" src="/app.js"></script>
+  <script type="module" src="/app.js?v=3"></script>
 </body>
 </html>

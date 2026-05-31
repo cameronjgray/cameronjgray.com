@@ -1,0 +1,11 @@
+{
+  "name": "Cameron Gray",
+  "short_name": "C. Gray",
+  "icons": [
+    { "src": "/assets/favicon-32x32.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "/assets/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ],
+  "theme_color": "#0e0e10",
+  "background_color": "#0e0e10",
+  "display": "standalone"
+}

@@ -57,7 +57,10 @@ main, header, footer {
   backdrop-filter: blur(4px);
 }
 
-footer { margin-top: 1.5rem; }
+/* Vertical breathing room between the stacked panels. */
+header { margin-bottom: 1.5rem; }
+main   { margin-bottom: 1.5rem; }
+footer { margin-bottom: 0; }
 
 /* Typography */
 h1, h2, h3 {
@@ -238,21 +241,40 @@ section:last-of-type { border-bottom: none; padding-bottom: 0; }
 
 .modal .badge { width: 36px; height: 36px; }
 
-/* Contact */
-.links {
+/* Contact - icon row */
+.contact-icons {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  padding: 0;
+  margin: 0;
 }
 
-.links li::after {
-  content: "·";
-  color: var(--muted);
-  margin-left: 1rem;
+.contact-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius);
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  transition: transform 0.15s ease, border-color 0.15s ease;
 }
 
-.links li:last-child::after { content: ""; }
+.contact-icons a:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--accent) 40%, var(--border));
+  opacity: 1;
+}
+
+.contact-icons img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  display: block;
+}
 
 /* Footer */
 footer {

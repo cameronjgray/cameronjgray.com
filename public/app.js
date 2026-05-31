@@ -15,7 +15,7 @@ const JOBS = [
     blurb: "London, UK (Remote)",
     description: "Vault Platform tackles workplace misconduct via a management portal and multiple user-intake methods (web, phone, mobile). I led projects end-to-end - design, implementation, App/Play Store releases - and was one of the primary developers who helped take the company to acquisition in June 2025.",
     link: "https://vaultplatform.com",
-    tech: ["node", "typescript", "react", "jest", "sql", "aws", "docker", "bash", "graphql", "sequelize"],
+    tech: ["node", "ts", "react", "jest", "sql", "aws", "docker", "bash", "graphql", "sequelize"],
   },
   {
     id: "project-1",
@@ -33,7 +33,7 @@ const JOBS = [
     blurb: "Hamburg, Germany (Remote)",
     description: "Early-stage German startup automating B2B transactions. I was primary developer on the customer portal rebuild and built the email-magic-link system for orders, shipping notices and invoices. Promoted from junior to mid-level developer.",
     link: "https://procuros.io/",
-    tech: ["react", "typescript", "jest", "php", "laravel", "phpunit", "docker", "aws", "google-app-script"],
+    tech: ["react", "ts", "jest", "php", "laravel", "phpunit", "docker", "aws", "script"],
   },
   {
     id: "incentive",
@@ -42,7 +42,7 @@ const JOBS = [
     blurb: "Edinburgh, UK (Remote)",
     description: "Joined as a graduate and watched the company grow from ~10 to ~30 people. Built and maintained games across the full stack and took ownership of game security after pen tests. Promoted from graduate to junior developer.",
     link: "https://incentivegames.com",
-    tech: ["react", "typescript", "jest", "node", "sql", "aws"],
+    tech: ["react", "ts", "jest", "node", "sql", "aws"],
   },
 ];
 
@@ -74,7 +74,7 @@ const PROJECTS = [
     title: "University Dissertation",
     meta: "Final-year project",
     description: "\"Using Machine Learning to Identify Fake Images.\" Built a TensorFlow model to detect image tampering and wrapped it in a PHP web frontend to make the technology more accessible.",
-    link: "https://www.cameronjgray.com/Using%20Machine%20Learning%20To%20Identify%20Fake%20Images.pdf",
+    link: "/assets/dissertation.pdf",
     tech: ["python", "tensorflow", "php"],
   },
   {
