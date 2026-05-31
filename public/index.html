@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cameron Gray - Full Stack Developer">
+  <meta name="theme-color" content="#0e0e10">
+  <title>Cameron Gray</title>
+
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="preload" as="image" href="/img/hero-800.avif" type="image/avif" fetchpriority="high">
+  <link rel="preload" href="/styles.css" as="style">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <canvas id="stars" class="stars" aria-hidden="true">
+    Your browser does not support the HTML canvas tag.
+  </canvas>
+
+  <header class="hero">
+    <picture class="hero__photo">
+      <source type="image/avif"
+              srcset="/img/hero-400.avif 400w, /img/hero-800.avif 800w"
+              sizes="(max-width: 600px) 200px, 320px">
+      <source type="image/webp"
+              srcset="/img/hero-400.webp 400w, /img/hero-800.webp 800w"
+              sizes="(max-width: 600px) 200px, 320px">
+      <img src="/img/hero-800.jpg" alt="Photo of Cameron Gray"
+           width="320" height="320" fetchpriority="high" decoding="async">
+    </picture>
+
+    <div class="hero__intro">
+      <h1>Cameron Gray</h1>
+      <p class="tagline">Fullstack Developer | Vim Enthusiast | Startup Adjacent</p>
+      <p class="hero__actions">
+        <a href="/assets/cv.pdf" class="btn">Download CV</a>
+        <a href="#work" class="btn btn--ghost">See Work</a>
+        <a href="#projects" class="btn btn--ghost">See Projects</a>
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        Hello! My name is Cameron and I'm a Fullstack Developer who has (mainly) worked at start ups. I'm happiest when I'm at the terminal, adore all things Linux and did I already mention I use Vim btw?
+      </p>
+    </section>
+
+    <section id="work">
+      <h2>Work</h2>
+      <!-- Cards rendered by app.js from the JOBS data -->
+      <div class="grid" id="work-grid" data-source="jobs"></div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <!-- Cards rendered by app.js from the PROJECTS data -->
+      <div class="grid" id="projects-grid" data-source="projects"></div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <ul class="links">
+        <li><a href="mailto:this@cameronjgray.com">this@cameronjgray.com</a></li>
+        <li><a href="https://github.com/cameronjgray" rel="me noopener" target="_blank">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/cameronjgray47/" rel="me noopener" target="_blank">LinkedIn</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Cameron Gray</p>
+  </footer>
+
+  <!-- Modal: a single <dialog> reused for any card. Contents are injected by app.js. -->
+  <dialog id="card-modal" class="modal" aria-labelledby="modal-title">
+    <button class="modal__close" type="button" aria-label="Close" data-modal-close>&times;</button>
+    <div class="modal__body">
+      <picture class="modal__picture">
+        <img id="modal-img" alt="" width="800" height="500" decoding="async">
+      </picture>
+      <h3 id="modal-title"></h3>
+      <p class="modal__meta" id="modal-meta"></p>
+      <p id="modal-description"></p>
+      <ul class="badges" id="modal-badges" aria-label="Technologies used"></ul>
+      <p class="modal__actions">
+        <a id="modal-link" class="btn" href="#" target="_blank" rel="noopener">Visit website</a>
+      </p>
+    </div>
+  </dialog>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
