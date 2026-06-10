@@ -4,9 +4,9 @@ const JOBS = [
     title: "Swap Commerce",
     meta: "Software Developer · December 2025 – Present",
     blurb: "",
-    description: "TODO: short description.",
+    description: "Swap Commerce is a fast growing start up in the e-commerce space who's flagship product is the first agentic store front. I sit on the Enablement team building foundational systems and developer tooling that other engineering teams across the company depend on",
     link: "https://swap-commerce.com",
-    tech: ["node"],
+    tech: ["node", "ts", "gcp"],
   },
   {
     id: "vault",
