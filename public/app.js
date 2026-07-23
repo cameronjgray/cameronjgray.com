@@ -54,6 +54,8 @@ const PROJECTS = [
     description: "Player classifier for fantasy football - models a player's projected fantasy points from variables like Madden rating, strength of schedule and opposition matchups. Ran weighted-average simulations against past seasons to tune the model.",
     link: "https://github.com/cameronjgray/player-comparison",
     tech: ["node", "docker", "sql", "bash"],
+    tile: "ageheightweightexp",
+    preview: "heightweightrating",
   },
   {
     id: "hestia",
@@ -68,6 +70,7 @@ const PROJECTS = [
     meta: "Lockdown project",
     description: "With no real sports during lockdown there was no real fantasy basketball - so I built a simulation league for my friends. A Python script generates daily games using player ratings from the 2K games; Google Sheets handled the draft, scoring and standings.",
     tech: ["python", "google-sheets"],
+    preview: "ffbb-screenshots",
   },
   {
     id: "dissertation",
@@ -76,6 +79,8 @@ const PROJECTS = [
     description: "\"Using Machine Learning to Identify Fake Images.\" Built a TensorFlow model to detect image tampering and wrapped it in a PHP web frontend to make the technology more accessible.",
     link: "/assets/dissertation.pdf",
     tech: ["python", "tensorflow", "php"],
+    tile: "diss-poster",
+    preview: "diss-poster",
   },
   {
     id: "vim-learning",
@@ -93,7 +98,7 @@ function cardHTML(item) {
   return `
     <button class="card reveal" type="button" data-id="${escapeAttr(item.id)}" aria-label="Open details for ${escapeAttr(item.title)}">
       <picture>
-        <img src="/img/${item.id}-800.webp" alt=""
+        <img src="/img/${item.tile || item.id}.webp" alt=""
              width="800" height="500" loading="lazy" decoding="async">
       </picture>
       <div class="card__body">
@@ -134,7 +139,7 @@ const modalBadges = document.getElementById("modal-badges");
 const modalLink = document.getElementById("modal-link");
 
 function openModal(item) {
-  modalImg.src    = `/img/${item.id}-800.jpg`;
+  modalImg.src    = `/img/${item.preview || item.id}.webp`;
   modalImg.alt    = `${item.title} preview`;
   modalTitle.textContent = item.title;
   modalMeta.textContent  = [item.meta, item.blurb].filter(Boolean).join(" · ");

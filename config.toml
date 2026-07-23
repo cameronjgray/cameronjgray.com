@@ -6,7 +6,7 @@ root = "/public"
 log-level = "info"
 
 compression = true
-compression-static = true
+compression-static = false
 
 page404 = "/404.html"
 ignore-hidden-files = true

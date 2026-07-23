@@ -2,7 +2,7 @@
   --bg: #0e0e10;
   --bg-soft: #17171a;
   --bg-card: #1c1c20;
-  --badge-bg: #959595;
+  --badge-bg: #d7dce4;
   --fg: #e8e8ea;
   --muted: #8a8a92;
   --accent: #7c9eff;
@@ -325,8 +325,8 @@ footer p { color: var(--muted); }
 .modal__picture img {
   width: 100%;
   height: auto;
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
+  max-height: 55vh;
+  object-fit: contain;
   display: block;
   background: var(--bg);
 }

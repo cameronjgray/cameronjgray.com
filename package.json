@@ -5,9 +5,7 @@
   "type": "module",
   "description": "Personal CV site - static, fast, minimal.",
   "scripts": {
-    "images": "node tools/build-images.js",
-    "compress": "node tools/compress.js",
-    "build": "npm run images && npm run compress",
+    "build": "node tools/build-images.js",
     "clean": "node tools/clean.js",
     "rebuild": "npm run clean && npm run build"
   },
