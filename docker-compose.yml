@@ -1,0 +1,39 @@
+# Shared config for both instances (identical hardening + healthcheck).
+x-web: &web
+  restart: unless-stopped
+  read_only: true
+  cap_drop: [ALL]
+  cap_add: [NET_BIND_SERVICE]
+  security_opt: [no-new-privileges:true]
+  mem_limit: 128m
+  memswap_limit: 128m
+  cpus: 0.5
+  pids_limit: 64
+  healthcheck:
+    test: ["CMD", "wget", "-qO-", "--spider", "http://localhost:8080/health"]
+    interval: 30s
+    timeout: 5s
+    retries: 3
+    start_period: 5s
+  logging:
+    driver: json-file
+    options:
+      max-size: "10m"
+      max-file: "3"
+
+services:
+  prod:
+    <<: *web
+    image: cameronjgray.com:prod
+    pull_policy: never                    # use the locally-built image, never hit a registry
+    container_name: cameronjgray.com
+    ports:
+      - "$PROD_PORT:8080"
+
+  dev:
+    <<: *web
+    build: .                              # built locally from the working tree
+    image: cameronjgray.com:dev
+    container_name: cameronjgray.com-dev
+    ports:
+      - "$PORT:8080"

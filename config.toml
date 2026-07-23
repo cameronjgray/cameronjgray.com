@@ -1,0 +1,44 @@
+[general]
+host = "0.0.0.0"
+port = 8080
+root = "/public"
+
+log-level = "info"
+
+compression = true
+compression-static = false
+
+page404 = "/404.html"
+ignore-hidden-files = true
+health = true
+
+[advanced]
+
+[[advanced.headers]]
+source = "**"
+[advanced.headers.headers]
+X-Content-Type-Options    = "nosniff"
+X-Frame-Options           = "DENY"
+Referrer-Policy           = "strict-origin-when-cross-origin"
+Permissions-Policy        = "camera=(), microphone=(), geolocation=(), interest-cohort=()"
+Content-Security-Policy   = "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'; manifest-src 'self'"
+
+[[advanced.headers]]
+source = "**/*.{html,json,webmanifest}"
+[advanced.headers.headers]
+Cache-Control = "no-cache"
+
+[[advanced.headers]]
+source = "**/*.{css,js}"
+[advanced.headers.headers]
+Cache-Control = "public, max-age=300, must-revalidate"
+
+[[advanced.headers]]
+source = "**/*.{woff,woff2,png,jpg,jpeg,gif,svg,webp,avif,ico}"
+[advanced.headers.headers]
+Cache-Control = "public, max-age=86400, must-revalidate"
+
+[[advanced.headers]]
+source = "**/*.pdf"
+[advanced.headers.headers]
+Cache-Control = "no-cache"

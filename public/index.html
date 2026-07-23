@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cameron Gray - Fullstack Developer">
+  <meta name="theme-color" content="#0e0e10">
+  <title>Cameron Gray</title>
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="manifest" href="/assets/site.webmanifest">
+
+  <!-- Preload critical assets. Versioned so a deploy cache-busts. -->
+  <link rel="preload" as="image" href="/img/headshot.webp" type="image/webp" fetchpriority="high">
+  <link rel="preload" href="/styles.css?v=3" as="style">
+  <link rel="stylesheet" href="/styles.css?v=3">
+</head>
+<body>
+  <canvas id="stars" class="stars" aria-hidden="true">
+    Your browser does not support the HTML canvas tag.
+  </canvas>
+
+  <header class="hero">
+    <picture class="hero__photo">
+      <img src="/img/headshot.webp" alt="Photo of Cameron Gray"
+           width="320" height="320" fetchpriority="high" decoding="async">
+    </picture>
+
+    <div class="hero__intro">
+      <h1>Cameron Gray</h1>
+      <p class="tagline">Fullstack Developer | Vim Enthusiast | Startup Adjacent</p>
+      <p class="hero__actions">
+        <a href="/assets/cv.pdf" class="btn">Download CV</a>
+        <a href="#work" class="btn btn--ghost">See Work</a>
+        <a href="#projects" class="btn btn--ghost">See Projects</a>
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        Full Stack Developer with a track record of taking projects from greenfield to production at
+        early and growth-stage startups, including taking one to acquisition. I’ve been given
+        ownership of high-impact projects - from full rebuilds to cross-functional integrations - and
+        have consistently taken on greater scope and responsibility at each company I’ve worked at.
+        I work comfortably across the stack with a backend focus, and I’m at my best when an
+        ambiguous problem needs structuring and shipping. Outside of work I run a personal Arch
+        Linux server hosting my own services, which keeps me close to the systems-level thinking
+        that feeds back into my engineering work.
+      </p>
+    </section>
+
+    <section id="work">
+      <h2>Work</h2>
+      <div class="grid" id="work-grid" data-source="jobs"></div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid" id="projects-grid" data-source="projects"></div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <ul class="contact-icons" aria-label="Contact links">
+        <li>
+          <a href="mailto:this@cameronjgray.com" aria-label="Email">
+            <img src="/img/icons/mail.webp" alt="" width="40" height="40" loading="lazy">
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/cameronjgray" rel="me noopener" target="_blank" aria-label="GitHub">
+            <img src="/img/icons/github.webp" alt="" width="40" height="40" loading="lazy">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/cameronjgray47/" rel="me noopener" target="_blank" aria-label="LinkedIn">
+            <img src="/img/icons/linkedin.webp" alt="" width="40" height="40" loading="lazy">
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Cameron Gray</p>
+  </footer>
+
+  <dialog id="card-modal" class="modal" aria-labelledby="modal-title">
+    <button class="modal__close" type="button" aria-label="Close" data-modal-close>&times;</button>
+    <div class="modal__body">
+      <picture class="modal__picture">
+        <img id="modal-img" alt="" width="800" height="500" decoding="async">
+      </picture>
+      <h3 id="modal-title"></h3>
+      <p class="modal__meta" id="modal-meta"></p>
+      <p id="modal-description"></p>
+      <ul class="badges" id="modal-badges" aria-label="Technologies used"></ul>
+      <p class="modal__actions">
+        <a id="modal-link" class="btn" href="#" target="_blank" rel="noopener">Visit website</a>
+      </p>
+    </div>
+  </dialog>
+
+  <script type="module" src="/app.js?v=3"></script>
+</body>
+</html>
