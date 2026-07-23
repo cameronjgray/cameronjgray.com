@@ -93,13 +93,7 @@ function cardHTML(item) {
   return `
     <button class="card reveal" type="button" data-id="${escapeAttr(item.id)}" aria-label="Open details for ${escapeAttr(item.title)}">
       <picture>
-        <source type="image/avif"
-                srcset="/img/${item.id}-400.avif 400w, /img/${item.id}-800.avif 800w"
-                sizes="(max-width: 700px) 100vw, 50vw">
-        <source type="image/webp"
-                srcset="/img/${item.id}-400.webp 400w, /img/${item.id}-800.webp 800w"
-                sizes="(max-width: 700px) 100vw, 50vw">
-        <img src="/img/${item.id}-800.jpg" alt=""
+        <img src="/img/${item.id}-800.webp" alt=""
              width="800" height="500" loading="lazy" decoding="async">
       </picture>
       <div class="card__body">

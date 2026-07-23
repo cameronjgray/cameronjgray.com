@@ -15,7 +15,7 @@
   <link rel="manifest" href="/assets/site.webmanifest">
 
   <!-- Preload critical assets. Versioned so a deploy cache-busts. -->
-  <link rel="preload" as="image" href="/img/headshot-800.avif" type="image/avif" fetchpriority="high">
+  <link rel="preload" as="image" href="/img/headshot-800.webp" type="image/webp" fetchpriority="high">
   <link rel="preload" href="/styles.css?v=3" as="style">
   <link rel="stylesheet" href="/styles.css?v=3">
 </head>
@@ -26,13 +26,7 @@
 
   <header class="hero">
     <picture class="hero__photo">
-      <source type="image/avif"
-              srcset="/img/headshot-400.avif 400w, /img/headshot-800.avif 800w"
-              sizes="(max-width: 600px) 200px, 320px">
-      <source type="image/webp"
-              srcset="/img/headshot-400.webp 400w, /img/headshot-800.webp 800w"
-              sizes="(max-width: 600px) 200px, 320px">
-      <img src="/img/headshot-800.jpg" alt="Photo of Cameron Gray"
+      <img src="/img/headshot-800.webp" alt="Photo of Cameron Gray"
            width="320" height="320" fetchpriority="high" decoding="async">
     </picture>
 
